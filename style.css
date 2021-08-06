@@ -1,0 +1,99 @@
+/* font-family: 'Patrick Hand', cursive; */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?oz504o');
+    src:  url('fonts/icomoon.eot?oz504o#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?oz504o') format('truetype'),
+      url('fonts/icomoon.woff?oz504o') format('woff'),
+      url('fonts/icomoon.svg?oz504o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-google:before {
+    content: "\ea88";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-skype:before {
+    content: "\eac5";
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      background :linear-gradient(to left, #b141cb, #1abcbe);
+  }
+  .container{
+      margin: 0;
+      font-family: 'Patrick Hand', cursive;
+  }
+  .holder {
+      background-image: linear-gradient(to right,#1abcbe,#3ba2c1,#b141cb,#fb08d4);
+      height: 600px;
+      margin: 30px auto 0;
+  }
+  h2{
+    color: white;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin: 0;
+    font-size: 42px;
+}
+  .img img{
+    height: 125px;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px 2px rgb(245 245 245 / 40%)
+
+  }
+  
+  .row {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    background-color : transparent;
+    /* box-shadow: .5px .1px .2px .2px inset; */
+    box-shadow: 0 3px 10px rgb(255 255 255 / 0.2);
+}
+a{
+  color: white;
+  text-decoration: none;
+  margin-left: 6px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 900px) {
+  .holder {
+    height: 100%;
+    padding: 100px;
+}
+.row{
+  margin-bottom: 10px;;
+}
+}
